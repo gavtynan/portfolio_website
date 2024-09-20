@@ -5,7 +5,7 @@ import laravel from "laravel-vite-plugin";
 export default defineConfig({
     plugins: [
         laravel({
-            input: "resources/js/app.js",
+            input: ["resources/js/app.js", "resources/css/app.css"],
             refresh: true,
         }),
         vue({
@@ -27,5 +27,24 @@ export default defineConfig({
         hmr: {
             host: "localhost",
         },
+    },
+    build: {
+        // Output to 'public/js' and 'public/css' directories
+        rollupOptions: {
+            output: {
+                // Define where JS files will go
+                entryFileNames: "js/[name].js",
+                chunkFileNames: "js/[name].js",
+                assetFileNames: ({ name }) => {
+                    if (name && name.endsWith(".css")) {
+                        // Define where CSS files will go
+                        return "css/[name].css";
+                    }
+                    return "assets/[name][extname]";
+                },
+            },
+        },
+        outDir: "public", // Ensure output goes to the public directory
+        emptyOutDir: true, // Clear previous builds
     },
 });
