@@ -10,8 +10,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+
     <!-- Styles -->
     @vite(['resources/js/app.js', 'resources/css/app.css']) <!-- Load your Vue components and styles -->
 
