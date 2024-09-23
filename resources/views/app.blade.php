@@ -11,6 +11,7 @@
     
 
     <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <style src="{{ secure_asset('css/app.css') }}" defer></script>
 
     <!-- Styles -->
     @vite(['resources/js/app.js', 'resources/css/app.css']) <!-- Load your Vue components and styles -->
