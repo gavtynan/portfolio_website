@@ -46,5 +46,10 @@ export default defineConfig({
         },
         outDir: "public", // Ensure output goes to the public directory
         emptyOutDir: false, // Clear previous builds
+        manifest: true, // Enable manifest generation
+    },
+    manifest: {
+        fileName: "manifest.json", // Name of the manifest file
+        outDir: "public/build", // Set manifest to output in 'public/build'
     },
 });
