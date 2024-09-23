@@ -45,6 +45,6 @@ export default defineConfig({
             },
         },
         outDir: "public", // Ensure output goes to the public directory
-        emptyOutDir: true, // Clear previous builds
+        emptyOutDir: false, // Clear previous builds
     },
 });
