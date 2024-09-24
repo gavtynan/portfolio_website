@@ -9,21 +9,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     
-    @env('production')
-    <script src="{{ secure_asset('js/app.js') }}" defer></script>
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/app2.css') }}">
-    @endenv
-
-    <!-- @env('local')
-    <script src="{{ asset('js/app.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/app2.css') }}">
-    @endenv -->
-
-
-    <!-- Styles -->
-    @vite(['resources/js/app.js', 'resources/css/app.css']) <!-- Load your Vue components and styles -->
+    @vite(['resources/js/app.js', 'resources/css/app.css', 'resources/css/app2.css'])esources/js/app.js', 'resources/css/app.css']) <!-- Load your Vue components and styles -->
 
     <style>
         html, body {
