@@ -132,7 +132,7 @@ export default {
     align-items: center;
     perspective: 500px; /* Perspective to create a 3D space */
     width: 100%;
-    height: 700px;
+    height: 70vh;
     position: relative;
     cursor: grab;
     user-select: none;
@@ -158,6 +158,6 @@ export default {
     font-weight: bold;
     text-align: center;
     margin-top: 0px;
-    color: #333;
+    color: #fdf0d5;
 }
 </style>
