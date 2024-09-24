@@ -24,9 +24,9 @@
 
     <!-- Styles -->
     @env('production')
-    <script src="{{ secure_asset('js/app.js') }}" defer></script>
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/app2.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset(mix('build/assets/app.css')) }}">
+        <link rel="stylesheet" href="{{ secure_asset(mix('build/assets/app2.css')) }}">
+        <script src="{{ secure_asset(mix('build/assets/app.js')) }}" defer></script>
     @endenv
 
     @vite(['resources/js/app.js', 'resources/css/app.css'])
