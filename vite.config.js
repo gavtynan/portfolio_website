@@ -7,7 +7,7 @@ export default defineConfig({
         laravel([
             "resources/js/app.js",
             "resources/css/app.css",
-            "resources/css/app.css",
+            "resources/css/app2.css",
         ]),
         vue({
             template: {
