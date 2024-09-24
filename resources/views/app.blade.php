@@ -27,6 +27,7 @@
     <script src="{{ secure_asset('js/app.js') }}" defer></script>
     <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ secure_asset('css/app2.css') }}">
+    @endenv
 
     @vite(['resources/js/app.js', 'resources/css/app.css'])
     <style>
