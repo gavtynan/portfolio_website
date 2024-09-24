@@ -24,11 +24,11 @@
 
     <!-- Styles -->
     @env('production')
-        <link rel="stylesheet" href="{{ secure_asset('resources/css/app.css') }}">
-        <script src="{{ secure_asset('resources/js/app.js') }}" defer></script>
-    @else
-        @vite(['resources/js/app.js', 'resources/css/app.css'])
-    @endenv
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/app2.css') }}">
+
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
     <style>
         html, body {
             margin: 0;
