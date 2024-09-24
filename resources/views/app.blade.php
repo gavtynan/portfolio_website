@@ -23,8 +23,12 @@
 
 
     <!-- Styles -->
-    @vite(['resources/js/app.js', 'resources/css/app.css']) <!-- Load your Vue components and styles -->
-
+    @env('production')
+        <link rel="stylesheet" href="{{ secure_asset(mix('resources/css/app.css')) }}">
+        <script src="{{ secure_asset(mix('resources/js/app.js')) }}" defer></script>
+    @else
+        @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @endenv
     <style>
         html, body {
             margin: 0;
