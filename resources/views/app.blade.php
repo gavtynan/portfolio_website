@@ -404,15 +404,14 @@
             }
 
             .sphere-container {
-        height: 200px; /* Adjust height for mobile screens */
-        margin-left: 50%;
-    }
+                height: 200px; /* Adjust height for mobile screens */
+                margin-left: 50%;
+            }
 
-    /* Shrink the sphere items (images) on smaller screens */
-    .sphere-item img {
-        width: 40px;  /* Shrink size */
-        height: 40px;
-    }
+            /* Shrink the sphere items (images) on smaller screens */
+            .sphere-item img {
+                width:5vh !important;  /* Shrink size */
+            }
         }
 
 
