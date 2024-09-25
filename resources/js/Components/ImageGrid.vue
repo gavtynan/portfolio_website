@@ -139,7 +139,7 @@ export default {
     padding-right: 20%;
     position: relative;
 
-    transform: translateX(-150px);
+    transform: translateX(-8rem);
 }
 
 .sphere-item {
@@ -159,5 +159,13 @@ export default {
     text-align: center;
     margin-top: 0px;
     color: #fdf0d5;
+}
+
+@media only screen and (max-width: 768px) {
+    .sphere-container {
+        position: relative; /* Ensure it can be adjusted relative to parent */
+        left: 15%; /* Move the left edge to the center */
+        transform: translateX(-50%); /* Center it horizontally */
+    }
 }
 </style>
