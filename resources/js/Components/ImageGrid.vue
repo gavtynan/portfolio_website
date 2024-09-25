@@ -90,10 +90,10 @@ export default {
 
                 // Update the rotation while clamping both rotateX and rotateY
                 this.rotateY = this.clampHorizontalRotation(
-                    this.rotateY + deltaX * 1
+                    this.rotateY + deltaX * 0.6
                 );
                 this.rotateX = this.clampVerticalRotation(
-                    this.rotateX - deltaY * 1
+                    this.rotateX - deltaY * 0.6
                 );
 
                 this.lastMouseX = currentMouseX;
