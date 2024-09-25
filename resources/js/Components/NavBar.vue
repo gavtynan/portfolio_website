@@ -53,7 +53,7 @@ nav {
     top: 0; /* Positions it at the top */
     left: 0; /* Aligns it to the left */
     width: 100%; /* Full width */
-    height: 5%;
+    height: 2.5rem;
     z-index: 1000; /* Ensures it stays above other elements */
     background-color: #4e5166; /* Change this to match your theme */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
@@ -62,7 +62,7 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 1%;
 }
 
 nav ul li a {
