@@ -78,7 +78,7 @@
             position: relative;
             align-items: center;
             justify-content: center;
-            min-height: 100vh; /* Full viewport height */
+            min-height: 95vh; /* Full viewport height */
             background-color: #7C90A0; /* Adjust background color if needed */
         }
 
