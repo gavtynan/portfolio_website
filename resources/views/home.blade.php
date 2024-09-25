@@ -44,6 +44,7 @@
             <div class="experience-item">
                 <p class="experience-description">
                 Front-End Web Developer Intern for a leading data analytics company. Worked closesly with the marketing team in making changes to the company website to improve readability, SEO, and create new pages. Worked in a team of several developers who were great role models and always ready to teach. Learned how to harness new frameworks and softwares to bring ideas to life.                </p>
+                <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
             </div>
             <div class="experience-item">
                 <h3 class="experience-name">Hackathon Participant @ Odevs and Stately</h3>
@@ -52,6 +53,7 @@
             <div class="experience-item">
                 <p class="experience-description">
                 Front-End Design lead in a Stately sponsored Hackathon. Provided project ideas to a team and spearheaded the front-end. Worked in a four-person team to create a web application that utilizes GPT3 and design frameworks.                </p>
+                <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
             </div>
             <div class="experience-item">
                 <h3 class="experience-name">Assistant Center Director and Operations Consultant @ Code Ninjas</h3>
@@ -60,6 +62,7 @@
             <div class="experience-item">
                 <p class="experience-description">
                 Assistant Director of a top 50 center of the world’s largest and fastest growing kids coding education company. Responsible for managing team of ten employees, strategic direction of IT educational curriculum, remote/live coding instruction, assisting with all technical needs, created innovative marketing campaigns, improved student retention rates, instrumental in launching new python educational program, and improved bottom line by reducing operational costs and increasing revenue.                </p>
+                <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
             </div>
         </div>
         <hr class="sm-separator">
@@ -72,7 +75,7 @@
                 <img src="/images/projects/chef.png" alt="Project 1 Description" />
             </div>
             <div class="project-item">
-                <p class="experience-description">
+                <p class="project-description">
                 ChefGPT<br>One-of-a-kind software developed by a group of students that allows users to input any meal they would like to cook, and the app will return a grocery list and the recipe to cook. Front-End design leader using <span style="color: #FDF0D5;">React</span> and <span style="color: #FDF0D5;">Bootstrap</span> to implement innovativebe ideas that create a well-thought UX.                    </p>
             </div>
             <div class="project-item-img">
@@ -93,7 +96,7 @@
                 <img src="/images/projects/www.png" alt="Project 1 Description" />
             </div>
             <div class="project-item">
-                <p class="experience-description">
+                <p class="project-description">
                 Portfolio Website<br>My personal portfolio website that you are currently on! Created to showcase me as a developer and design abilities as well as an understanding of different web languages and concepts. Written in <span style="color: #FDF0D5;">Blade, Laravel,</span> and <span style="color: #FDF0D5;">Vue</span>.                    </p>
             </div>
         </div>
@@ -135,4 +138,12 @@
             });
         }
     });
+
+    function toggleDescription(button) {
+    const description = button.previousElementSibling;
+    const isVisible = description.style.display === 'block';
+
+    description.style.display = isVisible ? 'none' : 'block';
+    button.textContent = isVisible ? 'Read More' : 'Show Less';
+}
 </script>

@@ -237,6 +237,10 @@
             text-align: justify;
         }
 
+        .read-more-btn {
+            display: none;
+        }
+
 
         
 
@@ -435,6 +439,32 @@
             text-align: center;
         }
         }
+        @media screen and (max-width: 768px) {
+            .experience-heading {
+            margin-bottom: 2.5rem;
+        }
+    .experience-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .experience-item {
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .experience-description {
+        display: none; /* Initially hide descriptions on mobile */
+    }
+
+    .read-more-btn {
+        display: inline-block; /* Show the button on mobile */
+        background-color: #7C90A0;
+        color: #FDF0D5;
+        border: none;
+        padding-bottom: .5rem;
+    }
+}
 
 
     </style>
