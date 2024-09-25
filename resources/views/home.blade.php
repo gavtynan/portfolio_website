@@ -43,7 +43,7 @@
             </div>
             <div class="experience-item">
                 <p class="experience-description">
-                Front-End Web Developer Intern for a leading data analytics company. Worked closesly with the marketing team in making changes to the company website to improve readability, SEO, and create new pages. Worked in a team of several developers who were great role models and always ready to teach. Learn how to harness new frameworks and softwares to bring ideas to life.                </p>
+                Front-End Web Developer Intern for a leading data analytics company. Worked closesly with the marketing team in making changes to the company website to improve readability, SEO, and create new pages. Worked in a team of several developers who were great role models and always ready to teach. Learned how to harness new frameworks and softwares to bring ideas to life.                </p>
             </div>
             <div class="experience-item">
                 <h3 class="experience-name">Hackathon Participant @ Odevs and Stately</h3>

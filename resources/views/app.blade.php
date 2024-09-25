@@ -412,6 +412,18 @@
             .sphere-item img {
                 width:5vh !important;  /* Shrink size */
             }
+            #contact input[type="text"],
+            #contact input[type="email"],
+            #contact textarea {
+                width: 55% !important;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+                background-color: #FDF0D5;
+                color: #333;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
         }
 
 
