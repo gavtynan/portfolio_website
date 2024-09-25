@@ -431,7 +431,7 @@
             .hero-content {
             padding-left: 10%;
             padding-right: 10%;
-            padding-top:20%;
+            padding-top:10%;
             text-align: center;
         }
         }

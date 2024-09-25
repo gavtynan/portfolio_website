@@ -77,7 +77,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
     position: relative;
 }
 
