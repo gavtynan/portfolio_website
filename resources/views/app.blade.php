@@ -424,6 +424,16 @@
                 color: #333;
                 box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
             }
+
+            .hero-content h1 {
+                
+            }
+            .hero-content {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top:20%;
+            text-align: center;
+        }
         }
 
 
